@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imágenes Responsivas en Bootstrap</title>
+  <!-- Vinculación al CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    img {
+      border: 2px solid #000000;
+      margin-bottom: 20px;
+      height: 50%;
+      width: 30%;
+    }
+    .p-4{ background-color: beige;
+
+    }
+  </style>
+
+</head>
+<body class="p-4">
+
+  <h2 class="mb-4 text-center">🖼️ Imágenes Responsivas con Bootstrap</h2>
+
+  <!-- Ejemplo 1: Imagen básica responsiva -->
+  <div class="container">
+    <h4>Ejemplo 1: Imagen básica</h4>
+    <img src="img/7dcd91034529ddc099805e3aeffccd7b.jpg" class="img-fluid" alt="Imagen básica responsiva">
+  </div>
+
+  <!-- Ejemplo 2: Imagen centrada y con bordes redondeados -->
+  <div class="container">
+    <h4>Ejemplo 2: Imagen centrada y redondeada</h4>
+    <img src="img/894c004f6639e96a03eeac087f4f9bb5.jpg" class="img-fluid rounded mx-auto d-block" alt="Imagen centrada redondeada">
+  </div>
+
+  <!-- Ejemplo 3: Imagen dentro de un sistema de columnas -->
+  <div class="container">
+    <h4>Ejemplo 3: Imagen dentro de columnas</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/ac7ef53f9bc11800e1a0fa18da6d5dd7.jpg" class="img-fluid" alt="Imagen en columna 1">
+      </div>
+      <div class="col-md-6">
+        <img src="img/37813b70948440408df8386faddc98b6.jpg" class="img-fluid" alt="Imagen en columna 2">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

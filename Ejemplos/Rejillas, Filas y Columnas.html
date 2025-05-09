@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rejillas en Bootstrap</title>
+  <!-- Vinculación al CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+   
+    .col {
+      border: 1px solid gray;
+      text-align: center;
+      background-color: lightgray;
+      font-size: 18px;
+    }
+
+    .row {
+      border: 1px solid gray;
+      text-align: center;
+      background-color: lightgray;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body class="p-4">
+  <h2 class="mb-4 text-center">Diseñando con rejilla con Bootstrap</h2>
+  <div class="container">
+    <div class="row"> 
+      <!-- Sistema de cuadrícula/rejillas -->  
+      <div class="col-sm">
+        El sistema de cuadrícula de Bootstrap utiliza una serie de contenedores, filas y columnas para diseñar y alinear el contenido. 
+      </div>
+      <div class="col-sm">
+        Está desarrollado con Flexbox y es totalmente responsivo.
+      </div>
+      <div class="col-sm">
+       Este ejemplo muestra de forma detallada cómo se construye la cuadrícula.
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <!-- Ejemplos de Filas y Columnas -->  
+  <h2 class="mb-4 text-center">Manejo de filas y columnas</h2>
+  <div class="container">
+
+    <h4>Ejemplo 1: Una fila con tres columnas iguales </h4>
+    <div class="row">
+      <div class="col">Columna 1</div>
+      <div class="col">Columna 2</div>
+      <div class="col">Columna 3</div>
+    </div>
+    <br>
+
+    <h4>Ejemplo 2: Una fila con columnas de distinto tamaño</h4>
+    <div class="row">
+        <div class="col-8">Columna grande (8/12)</div>
+        <div class="col-4">Columna pequeña (4/12)</div>
+    </div>
+    <br>
+
+    <h4>Ejemplo 3: Una fila con dos columnas de distinto tamaño y una variable</h4>
+    <div class="row justify-content-md-center">
+        <div class="col">Columna 1</div>
+        <div class="col-md-auto">Contenido de ancho variable</div>
+        <div class="col">Columna 3</div>
+    </div>
+    <br>
+    
+    <h4>Ejemplo 4: Dos filas con dos columnas iguales</h4>
+    <div class="row">
+      <div class="col">Columna 1</div>
+      <div class="col">Columna 2</div>
+      <div class="w-100"></div>
+      <div class="col">Columna 3</div>
+      <div class="col">Columna 4</div>
+    </div>
+    
+  </div>
+</body>
+</html>
